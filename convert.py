@@ -32,7 +32,7 @@ def parse_text(text):
         else:
             if mode == "en" and jp_buffer:
                 results.append([
-                    " ".join(jp_buffer),
+                    "".join(jp_buffer),
                     " ".join(en_buffer)
                 ])
                 jp_buffer = []
@@ -43,7 +43,7 @@ def parse_text(text):
 
     if jp_buffer or en_buffer:
         results.append([
-            " ".join(jp_buffer),
+            "".join(jp_buffer),
             " ".join(en_buffer)
         ])
 
